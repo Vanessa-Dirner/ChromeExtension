@@ -1,1 +1,8 @@
-document.addEventListener('scroll', () => alert('Watch out, it is DJ Khaled!'));
+let 
+    button = document.querySelector(''),
+    site_background = document.querySelector("body"),
+    color = ""
+
+function changeBackground(color) {
+    site_background.style.background = color;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="node_modules/md-color-picker/dist/mdColorPicker.min.css">
+
+    <script src="node_modules/tinycolor2/dist/tinycolor-min.js"></script>
+    <script src="node_modules/md-color-picker/dist/mdColorPicker.min.js"></script>
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script> 
+
+    <title>Background color guesser</title>
+</head>
+<body>
+<div class="mui-appbar">
+    <div class="mui-container">
+        <table>
+            <tr class="mui--appbar-height">
+                <td class="mui--text-title">Change Background</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<form action="/content.js" method="get"></form>
+    <label for="color">Color:</label>
+    <input type="text" name="color" id="color_form">
+    <input type="submit" value="Change">
+<!-- <div md-color-picker ng-model="valueObj"></div> -->
+</body>
+</html>
