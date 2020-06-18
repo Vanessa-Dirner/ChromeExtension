@@ -1,8 +1,9 @@
-let 
-    button = document.querySelector(''),
-    site_background = document.querySelector("body"),
-    color = ""
+/* content.js communicates with the browser page  */
 
-function changeBackground(color) {
-    site_background.style.background = color;
-}
+
+// Any time the 'Change' button is clicked
+chrome.runtime.onMessage.addListener((req)=>{
+   document.querySelectorAll('div').forEach((items)=>{
+       items.style.background = req;
+   }) ;
+})

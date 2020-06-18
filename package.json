@@ -4,7 +4,10 @@
   "description": "Chrome extension that allows you to choose colors",
   "main": "content.js",
   "dependencies": {
-    "md-color-picker": "^0.2.6"
+    "angular": "^1.8.0",
+    "jquery": "^3.5.1",
+    "md-color-picker": "^0.2.6",
+    "muicss": "^0.10.2"
   },
   "devDependencies": {},
   "scripts": {

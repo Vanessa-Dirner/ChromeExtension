@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="design.css">
-    <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="node_modules/md-color-picker/dist/mdColorPicker.min.css">
-
-    <script src="node_modules/tinycolor2/dist/tinycolor-min.js"></script>
-    <script src="node_modules/md-color-picker/dist/mdColorPicker.min.js"></script>
-    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script> 
-
+    <link rel="stylesheet" href="./node_modules/muicss/dist/css/mui.min.css">
     <title>Background color guesser</title>
 </head>
 <body>
@@ -18,15 +12,28 @@
     <div class="mui-container">
         <table>
             <tr class="mui--appbar-height">
-                <td class="mui--text-title">Change Background</td>
+                <td id="color_title mui--text-right" class="mui--text-title">Change Background</td>
             </tr>
         </table>
     </div>
 </div>
-<form action="/content.js" method="get"></form>
-    <label for="color">Color:</label>
-    <input type="text" name="color" id="color_form">
-    <input type="submit" value="Change">
+<div class="mui-container">
+    <div class="mui-row">
+        <div class="mui-col-sm-12">
+            <form class="mui-form">
+                <legend id="color_title">Color</legend>
+                <div class="mui-textfield">
+                    <input type="text" id="color_input">
+                </div>
+                <button type="submit" class="mui-btn mui-btn--flat mui-btn--primary" id="change_btn">Change color</button>
+                <button class="mui-btn mui-btn--flat mui-btn--accent">Revert!</button>
+        </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+<script src="popup.js"></script>
 <!-- <div md-color-picker ng-model="valueObj"></div> -->
 </body>
 </html>
