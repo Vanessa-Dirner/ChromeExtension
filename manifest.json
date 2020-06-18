@@ -10,14 +10,18 @@
     "default_title": "Open the popup",
     "default_icon":"./icon256.png"
   },
-  "permissions" : [
+
+  "content_scripts": [
+      {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+      }
   ],
-    "content_scripts": [
-        {
-            "matches": [
-              "<all_urls>"
-            ],
-            "js": ["content.js"]
-        }
-    ]
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
 }
