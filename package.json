@@ -1,0 +1,26 @@
+{
+  "name": "chromeextension",
+  "version": "1.0.0",
+  "description": "Chrome extension that allows you to choose colors",
+  "main": "content.js",
+  "dependencies": {
+    "angular": "^1.8.0",
+    "jquery": "^3.5.1",
+    "md-color-picker": "^0.2.6",
+    "muicss": "^0.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curlyLasagna/ChromeExtension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curlyLasagna/ChromeExtension/issues"
+  },
+  "homepage": "https://github.com/curlyLasagna/ChromeExtension#readme"
+}

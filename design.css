@@ -1,9 +1,3 @@
-body {
-    background-color: lightblue;
-   
-}
-
-h1 {
-    color: navy;
-    margin-left: 20px;
+.mui-appbar {
+    margin-bottom: 1.0em;
 }
